@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News from CoinDesk</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .time {
+    font-style: italic;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>News from CoinDesk</h1>
+  {% for article in news_data %}
+  <div class="article">
+    <h2>{{ article.headline }}</h2>
+    <p>{{ article.summary }}</p>
+    <p class="time">Published on {{ article.time }} by {{ article.author }}</p>
+    <a href="{{ article.link }}" target="_blank">Read more</a>
+  </div>
+  {% endfor %}
+</div>
+
+</body>
+</html>

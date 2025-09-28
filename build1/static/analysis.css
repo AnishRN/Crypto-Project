@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+    color: white;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, rgba(12, 12, 107, 0.95), rgb(42, 86, 168));
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 14rem;
+    margin: 0 auto;
+}
+
+a{
+    color: aliceblue;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h6{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted{
+    color: #7d8da1;
+}
+
+p{
+    color: #677483;
+}
+
+b{
+    color: #363949;
+}
+
+.primary{
+    color: #7380ec;
+}
+
+.success{
+    color: #41f1b6;
+}
+
+.danger{
+    color: #ff7782;
+}
+
+.warning{
+    color: #ff4edc;
+}
+
+aside{
+    height: 100vh;
+    z-index: 1;
+}
+
+aside.top{
+    background-color: rgb(17, 81, 90);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    margin-top: 30px;
+    margin-left: 0px;
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(17, 81, 90);
+    align-content: center;
+}
+
+aside.top div.close{
+    display: none;
+    background-color: rgb(17, 81, 90);
+    align-items: center;
+}
+
+aside .sidebar{
+    background-color: rgba(10, 103, 101, 0.656);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+}
+
+aside.h3{
+    font-weight: 400;
+    align-items: center;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: #363949;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition:all .1s ease-in;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+aside .sidebar a:hover, aside.sidebar a:active{
+    background-color: rgba(7, 97, 101, 0.742);
+    margin-left: 0;
+    border-left: 5px solid #4c80bc;
+}
+
+
+.main {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 14rem; 
+}
+
+.crypto-selector {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+.crypto-select{
+    width: 100%;
+}
+.crypto-selector h2 {
+    margin-bottom: 10px;
+    display: flex; /* Add this line */
+    align-items: center;
+    
+}
+
+.custom-select select {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.custom-select select:focus {
+    outline: none;
+    border-color: #7380ec; 
+}
+
+.graph {
+    height: 460px; 
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+button {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    width: 20%;
+}

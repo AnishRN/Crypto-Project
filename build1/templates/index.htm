@@ -1,0 +1,10 @@
+{% extends 'dashboard.htm' %}
+
+{% block graph %}
+<div class="graph">
+    <div id="plot">
+        <!-- Include Plotly graph data here -->
+        {{ plot_html | safe }}
+    </div>
+</div>
+{% endblock %}
